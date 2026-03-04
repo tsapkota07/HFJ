@@ -28,11 +28,15 @@ public class Main {
 
         // generate three random numbers
         java.util.Random randomGenerator = new java.util.Random();
+        // the nextInt method will generate a number between 0 and whatever number we give it to,
+        //      not including that number.
+        //      eg: randomGenerator.nextInt(3) will give us either 0 or 1 or 2.
         int rand1 = randomGenerator.nextInt(oneLength);
         int rand2 = randomGenerator.nextInt(twoLength);
         int rand3 = randomGenerator.nextInt(threeLength);
 
         // Now build a phrase
+        // We can use the '+' operator to join/concatenate/smoosh multiple strings into one string.
         String phrase = wordListOne[rand1] +  " " +
                 wordListTwo[rand2] + " " +
                 wordListThree[rand3];
