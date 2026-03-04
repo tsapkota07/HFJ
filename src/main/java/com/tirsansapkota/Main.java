@@ -1,6 +1,6 @@
 package com.tirsansapkota;
 
-// Exercise: Code Magnets.
+// Exercise: Be The Compiler: 1A
 
 
 
@@ -10,30 +10,14 @@ package com.tirsansapkota;
 public class Main{
     public static void main(String[] args)
     {
-        int x = 3;
-
-        while (x > 0)
-        {
-            if (x > 2) {
-                System.out.print("a");
+        int x =1;
+        while (x < 10) {
+            if (x > 3) {
+                System.out.println("big x");
             }
-
-            x = x - 1;
-            System.out.print("-");
-
-            if (x == 2)
-            {
-                System.out.print("b c");
-            }
-
-            if (x == 1)
-            {
-                System.out.print("d");
-                x = x - 1;
-            }
-
-
         }
 
     }
 }
+
+// Result: Does not decrement the x value at any point in the loop. Thus, the loop runs indefinitely.
