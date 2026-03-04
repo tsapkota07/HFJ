@@ -1,6 +1,6 @@
 package com.tirsansapkota;
 
-// Exercise: Be The Compiler: 1A
+// Exercise: Be The Compiler: 1B
 
 
 
