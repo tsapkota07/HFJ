@@ -1,6 +1,6 @@
 package com.tirsansapkota;
 
-// Exercise: Be The Compiler: 1B
+// Exercise: Be The Compiler: 1C
 
 
 
@@ -11,14 +11,13 @@ public class Main{
     public static void main(String[] args)
     {
         int x = 5;
-        while (x < 1) {
+        while (x > 1) {
             x = x-1;
-            if (x < 3) {
-                System.out.println("small x");
+            if (x<3) {
+                System.out.println("Small x");
             }
-    }
-
+        }
     }
 }
 
-// Result: Does not run the loop at all, since the value of x is 5 initially and doesn't get past the while loop.
+// Result: Runs the loop properly this time. outputs 'Small x' twice.
