@@ -10,14 +10,15 @@ package com.tirsansapkota;
 public class Main{
     public static void main(String[] args)
     {
-        int x =1;
-        while (x < 10) {
-            if (x > 3) {
-                System.out.println("big x");
+        int x = 5;
+        while (x < 1) {
+            x = x-1;
+            if (x < 3) {
+                System.out.println("small x");
             }
-        }
+    }
 
     }
 }
 
-// Result: Does not decrement the x value at any point in the loop. Thus, the loop runs indefinitely.
+// Result: Does not run the loop at all, since the value of x is 5 initially and doesn't get past the while loop.
